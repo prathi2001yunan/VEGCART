@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <RadioGroup
+        android:layout_width="319dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="126dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/but1"
+            android:layout_width="92dp"
+            android:layout_height="38dp"
+            android:background="@drawable/radioselected"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:textAlignment="center"
+            android:text="corn">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/but2"
+            android:layout_width="92dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:background="@drawable/radioselected"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+
+            android:text="potato">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/but3"
+            android:layout_width="92dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:background="@drawable/radioselected"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:text="cabbage">
+
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="19dp"
+        android:text="FIND"
+        android:textColor="#FFAB00"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="223dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/acme"
+        android:text="FRESH Vegetables"
+        android:textColor="#058038"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/baseline_supervised_user_circle_24" />
+
+    <FrameLayout
+
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="76dp"
+        android:text="search here"
+        android:textColor="#7C7A7A"
+        android:paddingLeft="20dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/search"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:drawablePadding="12dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_search_24">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Search here"
+            android:textColor="#424141"
+            android:textSize="18dp">
+
+        </TextView>
+
+
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle1"
+        android:layout_width="410dp"
+        android:layout_height="279dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="238dp"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="9dp"
+        android:background="#4396E4B5"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="198dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="209dp"
+        android:text="New Products"
+        android:textColor="#050505"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="277dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="183dp"
+        android:text="Various Categories"
+        android:textColor="#0E0909"
+        android:textSize="20sp" />
+
+</RelativeLayout>
